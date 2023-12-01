@@ -2,6 +2,9 @@ import tkinter
 from tkinter import ttk
 from tkinter import messagebox
 from tkinter import filedialog
+import openai
+
+open.ai_api_key= 'Placeholder'
 
 def browse_file(entry_var):
     file_path = filedialog.askopenfilename(filetypes=[("PDF files", "*.pdf"), ("All files", "*.*")])
