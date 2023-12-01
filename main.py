@@ -10,13 +10,13 @@ def browse_file(entry_var):
         entry_var.set(file_path)
 
 window = tkinter.Tk()
-window.title("Data Entry Form")
+window.title("Course Entry Form")
 
 frame = tkinter.Frame(window)
 frame.pack()
 
 # Saving User Info
-user_info_frame = tkinter.LabelFrame(frame, text="User Information")
+user_info_frame = tkinter.LabelFrame(frame, text="Course Entry")
 user_info_frame.grid(row=0, column=0, padx=20, pady=10)
 
 file_path_label=tkinter.Label(user_info_frame, text="File Path")
@@ -45,7 +45,7 @@ for widget in courses_frame.winfo_children():
     widget.grid_configure(padx=10, pady=5)
 
 # Button
-button = tkinter.Button(frame, text="Enter data", command=lambda: None)
+button = tkinter.Button(frame, text="Import Files", command=lambda: None)
 button.grid(row=3, column=0, sticky="news", padx=20, pady=10)
 
 window.mainloop()
