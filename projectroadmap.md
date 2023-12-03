@@ -11,4 +11,7 @@
  	- [X] Change “User Information” to “Course Entry”
  - [ ] Store PDF files/ file paths
  - [ ] Get OpenAI code to analyze the PDFs
+ 	- [ ] Prompt AI to find the schedule of assignments and their due dates
+  	- [ ] Save Responses (Via Google Sheets?)
+   - [ ] Populate responses into a Calendar using Google Calendar API
   
