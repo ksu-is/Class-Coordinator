@@ -9,7 +9,7 @@
 	- [X] Change “Enter Data” to “Import File”
  	- [X] Change “Data Entry Form” to “Course Entry Form”
  	- [X] Change “User Information” to “Course Entry”
- - [ ]Build Loop:
+ - [ ] Build Loop:
  	- [ ] Extract Text using pdfplumber
  	- [ ] post text to openai
  	- [ ] Ask for Class Title
