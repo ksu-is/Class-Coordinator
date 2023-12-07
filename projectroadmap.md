@@ -9,10 +9,13 @@
 	- [X] Change “Enter Data” to “Import File”
  	- [X] Change “Data Entry Form” to “Course Entry Form”
  	- [X] Change “User Information” to “Course Entry”
- - [ ] Store PDF files/ file paths
- - [ ] Use pdfplumber to extract text from the PDF
- - [ ] Get OpenAI code to analyze the text
- 	- [ ] Prompt AI to find the schedule of assignments and their due dates
-  	- [ ] Save Responses (Via Google Sheets?)
-   - [ ] Populate responses into a Calendar using Google Calendar API
+ - [ ]Build Loop:
+ 	- [ ] Extract Text using pdfplumber
+ 	- [ ] post text to openai
+ 	- [ ] Ask for Class Title
+  	- [ ] Ask for Course #
+   	- [ ] Ask for Assignment list
+   	- [ ] Loop through Assignments
+   		- [ ] call google sheets api
+   	 	- [ ] call google calendar api
   
