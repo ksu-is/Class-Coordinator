@@ -10,7 +10,7 @@
  	- [X] Change “Data Entry Form” to “Course Entry Form”
  	- [X] Change “User Information” to “Course Entry”
  - [ ] Build Loop:
- 	- [ ] Extract Text using pdfplumber
+ 	- [X] Extract Text using pdfplumber
  	- [ ] post text to openai
  	- [ ] Ask for Class Title
   	- [ ] Ask for Course #
