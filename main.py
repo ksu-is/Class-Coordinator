@@ -57,7 +57,7 @@ def import_files():
         analyze_pdf(file_path)
         
 # Button
-button = tkinter.Button(frame, text="Import Files", command=import_files)
+button = tkinter.Button(frame, text="Read PDF", command=import_files)
 button.grid(row=3, column=0, sticky="news", padx=20, pady=10)
 
 window.mainloop()
