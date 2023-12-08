@@ -9,13 +9,13 @@
 	- [X] Change “Enter Data” to “Import File”
  	- [X] Change “Data Entry Form” to “Course Entry Form”
  	- [X] Change “User Information” to “Course Entry”
- - [ ] Build Loop:
- 	- [X] Extract Text using pdfplumber
- 	- [ ] post text to openai
- 	- [ ] Ask for Class Title
-  	- [ ] Ask for Course #
-   	- [ ] Ask for Assignment list
-   	- [ ] Loop through Assignments
-   		- [ ] call google sheets api
-   	 	- [ ] call google calendar api
+ - [ ] Build Path:
+ 	- [X] Prompt user to enter PDF
+ 	- [ ] Create OpenAI API Assistant
+ 		- [ ] Enter PDF
+   		- [ ] Tell the Assistant "I need the list of all assignments and due dates"
+	- [ ]Create Google Calendar API to link to a new calendar called "Class Coordinator"
+		- [ ] call Google Calendar api and use information extracted by the Assistant
+  	- [ ] Create a Google Sheets API to create an info Sheet
+   		- [ ] call google sheets API and organize the info	
   
