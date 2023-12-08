@@ -1,4 +1,4 @@
-import datetime
+ import datetime
 from google_auth_oauthlib.flow import InstalledAppFlow
 from google.auth.transport.requests import Request
 from google.oauth2.credentials import Credentials
@@ -50,7 +50,7 @@ def add_calendar_event(assignment_title,assignment_date):
             'timeZone': 'America/New_York',
         },
     }
-    event = service.events().insert(calendarId='f53a5b77c3635eebd4b7d2ae212eb6fd54f5ef53c0ecf73aaa8b8e37eda3b46d@group.calendar.google.com', body=event).execute()
+    event = service.events().insert(calendarId='ENTER CALENDAR ID', body=event).execute()
     print(f"Event created: {event.get('htmlLink')}")
 
 #add_calendar_event()
