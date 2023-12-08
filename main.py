@@ -11,7 +11,7 @@ import gcalendar
 import gsheets
 
 # Set your OpenAI API key
-os.environ['OPENAI_API_KEY'] ='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'
+os.environ['OPENAI_API_KEY'] ='ENTER YOUR API KEY'
 client= OpenAI()
 
 def run_assistant(pdf_file):
