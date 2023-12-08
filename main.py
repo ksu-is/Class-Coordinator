@@ -11,7 +11,7 @@ import gcalendar
 import gsheets
 
 # Set your OpenAI API key
-os.environ['OPENAI_API_KEY'] ='ENTER YOUR API KEY'
+os.environ['OPENAI_API_KEY'] ='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'
 client= OpenAI()
 
 def run_assistant(pdf_file):
@@ -32,7 +32,7 @@ def run_assistant(pdf_file):
     messages=[
         {
         "role": "user",
-        "content": "I need the list of assignments and their due dates.",
+        "content": "First, I need the semester/year of this syllabus. Then, I need a list of all assignments and due dates from the syllabus. Date format needs to be YYYY-MM-DD, assuming all of the assignments are in the same year as the syllabus. Ex: 'Assignment name, YYYY-MM-DD'",
         "file_ids": [file.id]
         }
     ]
@@ -45,10 +45,10 @@ def run_assistant(pdf_file):
     thread_id=thread.id
     )
     #time.sleep(60)
-    print(messages.data)
+    #print(messages.data)
 # Example usage
-    gcalendar.add_calendar_event()
-    gsheets.add_assignment()
+    gcalendar.add_calendar_event("P2M5","2023-12-10")
+    gsheets.add_assignment("P2M5","2023-12-10")
 
 def analyze_pdf(file_path):
     # Read the PDF
@@ -130,4 +130,5 @@ button = tkinter.Button(frame, text="Read PDF", command=import_files)
 button.grid(row=1, column=0, sticky="news", padx=20, pady=10)
 
 window.mainloop()
+
 
