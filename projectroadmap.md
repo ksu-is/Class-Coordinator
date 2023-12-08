@@ -11,8 +11,8 @@
  	- [X] Change “User Information” to “Course Entry”
  - [ ] Build Path:
  	- [X] Prompt user to enter PDF
- 	- [ ] Create OpenAI API Assistant
- 		- [ ] Enter PDF
+ 	- [X] Create OpenAI API Assistant
+ 		- [X] Enter PDF
    		- [ ] Tell the Assistant "I need the list of all assignments and due dates"
 	- [ ]Create Google Calendar API to link to a new calendar called "Class Coordinator"
 		- [ ] call Google Calendar api and use information extracted by the Assistant
