@@ -33,20 +33,20 @@ def get_calendar_service():
     service = build('calendar', 'v3', credentials=creds)
     return service
 
-def add_calendar_event():
+def add_calendar_event(assignment_title,assignment_date):
     service = get_calendar_service()
 
     # Call the Calendar API
     event = {
-        'summary': 'Appointment',
-        'location': 'Somewhere',
-        'description': 'A chance to talk.',
+        'summary': assignment_title,
+        'location': 'KSU',
+        'description': 'Class',
         'start': {
-            'dateTime': '2023-12-10T10:00:00-07:00',
+            'date': assignment_date,
             'timeZone': 'America/New_York',
         },
         'end': {
-            'dateTime': '2023-12-10T11:00:00-07:00',
+            'date': assignment_date,
             'timeZone': 'America/New_York',
         },
     }
