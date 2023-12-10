@@ -15,10 +15,9 @@
  		- [X] Enter PDF
    		- [X] Tell the Assistant "I need the list of all assignments and due dates"
      		- [ ] Organize Assistant response to fit the format "assignment name, YYYY-MM-DD"
-       		- [ ] 
 	- [ ] Create Google Calendar API to link to a new or existing Calendar (GCalendar.py)
  		- [X] Test with simple data and check if the calendar is linked by running GCalendar.py
-		- [X] call Google Calendar in the main.py code to enter information extracted by the Assistant
+		- [X] Call Google Calendar in the main.py code to enter information extracted by the Assistant
 		- [X] Check Google Calendar for updated events. Is it there?
   			- [ ] It works
   	- [ ] Create a Google Sheets API to create an info Sheet (Gsheets.py)
