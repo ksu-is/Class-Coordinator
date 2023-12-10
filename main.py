@@ -13,7 +13,7 @@ import json
 import re
 
 # Set your OpenAI API key
-os.environ['OPENAI_API_KEY'] ='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'
+os.environ['OPENAI_API_KEY'] ='Enter API KEY HERE'
 client= OpenAI()
 
 def run_assistant(pdf_file):
